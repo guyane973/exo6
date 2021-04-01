@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+    <title>Formulaire</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<form method="get">
+	<fieldset class="identity">
+		<legend class="identity">Votre Identité:</legend>
+		<ol>
+			<li><label for="name">Nom: </label><input type="text" id="name" name="name" placeholder="Ex: Dupond/t" pattern="[a-zA-Z]+" required></li>
+			<li><label for="lastname">Prénom: </label><input type="text" id="lastname" name="lastname" placeholder="Ex: Edouard" required></li>
+			<li><label for="mail">Adresse Mail: </label><input type="email" id="mail" name="mail" placeholder="Ex: mail@mail.fr" required></li>
+		</ol>
+	</fieldset>
+	<fieldset class="delivery">
+		<legend class="delivery">Adresse de Livraison:</legend>
+		<ol>
+			<li><label for="address">Adresse: </label><textarea placeholder="adresse" id="address" name="address" rows="4" cols="22" required></textarea></li>
+			<li><label for="zipcode">Code Postal: </label><input type="text" id="zipcode" name="zipcode" placeholder="Code Postal" maxlength="5" required></li>
+			<li><label for="city">Ville: </label><input type="text" id="city" name="city" placeholder="Ville" required></li>
+		</ol>
+	</fieldset>
+	<fieldset class="checkout">
+		<legend class="checkout">Informations de Réglement:</legend>
+		<ol>
+			<li><label>Type de Carte Bancaire:</label><br>
+				<input type="radio" name="carte_bancaire">VISA<br>
+				<input type="radio" name="carte_bancaire">MasterCard</li>
+			<li><label for="cardnumber">Numéro de Carte: </label><input type="text" id="cardnumber" name="cardnumber" placeholder="Numéro de Carte" maxlength="16" required></li>
+			<li><label for="pin">Code de Sécurité: </label><input type="text" id="pin" name="pin" placeholder="Code de Sécurité" maxlength="3" required></li>
+			<li><label for="cardName">Nom du Titulaire: </label><input type="text" id="cardName" name="cardName" placeholder="Nom du Titulaire" required></li>
+		</ol>
+	</fieldset>
+	<button type="submit">J'achète!</button>
+	</form>
+</body>
+</html>
